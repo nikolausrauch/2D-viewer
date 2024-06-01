@@ -47,7 +47,7 @@ void Viewer::drawCircles(InputIt first, InputIt last, UnaryFunction f)
     glm::vec4 color = {0.0, 0.0, 0.0, 1.0};
     float radius = 1.0f;
 
-    std::vector<glm::vec2> vertices(mRender.circleVertices);
+    std::vector<glm::vec2> vertices(mRender.circleVertices + 1);
     for(unsigned int i = 0; i <= mRender.circleVertices; i++)
     {
         vertices[i] =
